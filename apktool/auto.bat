@@ -1,0 +1,2 @@
+apktool.bat 
+pause
