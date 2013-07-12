@@ -118,7 +118,8 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				PreprocessorDefinitions="WIN32;NDEBUG;_CONSOLE"
+				AdditionalIncludeDirectories="d:\work\windows\sdk\wx-2.9\include;d:\work\windows\sdk\wx-2.9\include\msvc"
+				PreprocessorDefinitions="WIN32;NDEBUG;__WXMSW__;WXUSINGDLL"
 				RuntimeLibrary="2"
 				UsePrecompiledHeader="0"
 				WarningLevel="3"
@@ -136,9 +137,11 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="wxbase29u.lib"
 				LinkIncremental="1"
+				AdditionalLibraryDirectories="d:\work\windows\sdk\wx-2.9\lib\vc_dll"
 				GenerateDebugInformation="true"
-				SubSystem="1"
+				SubSystem="2"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
 				TargetMachine="1"

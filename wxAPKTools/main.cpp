@@ -248,6 +248,7 @@ bool MyApp::OnInit()
 	//frame->Show( true );
 	MainDialog dlg(NULL);
 	dlg.ShowModal();
+	dlg.Destroy();
 	return false;
 }
 
